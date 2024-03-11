@@ -8,16 +8,29 @@
     <script src="index.js" defer></script>
 </head>
 <body>
+    <style>
+        #info > div {
+            width: calc(20% - 10px); 
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
     <div class="container">
         <div class="row">
             <div id="info"></div>
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary" id="prevBtn">Previous</button>
+                <button type="button" class="btn btn-primary" id="prevBtn" data-page="1">Previous</button>
             </div>
             <div class="col-6 d-flex justify-content-start">
-                <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                <button type="button" class="btn btn-primary" id="nextBtn" data-page="1">Next</button>
             </div>
         </div>        
     </div>
